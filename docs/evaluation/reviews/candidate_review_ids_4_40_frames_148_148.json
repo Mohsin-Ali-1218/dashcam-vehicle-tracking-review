@@ -1,0 +1,38 @@
+{
+  "schema_version": "candidate_review_v1",
+  "review_timestamp": "2026-10-31T15:36:36.093Z",
+  "input_paths": {
+    "video": "data/preview/daylight-2018-07-29-segment-7.mp4",
+    "tracks": "data/preview/daylight-tracking-1200-v1/tracks.jsonl",
+    "pairs": "data/preview/daylight-tracking-1200-v1/pair-observations.csv"
+  },
+  "selected_interval": {
+    "start_frame": 140,
+    "end_frame": 155
+  },
+  "selected_ids": [
+    4,
+    40
+  ],
+  "pair_ids": {
+    "track_id_a": 4,
+    "track_id_b": 40
+  },
+  "reviewed_range": {
+    "start_frame": 148,
+    "end_frame": 148
+  },
+  "assessment": "same_vehicle",
+  "uncertainty_notes": "Assessment limited to frame 148 using the original and annotated images. Identity across other frames was not assessed. This does not establish a physical conflict or near-miss.",
+  "supporting_observations": "At frame 148, the original image shows one SUV at the location covered by the boxes for IDs 4 and 40. The annotated view shows both boxes on that SUV, supporting a duplicate-box assessment for this frame.",
+  "notes": {
+    "uncertainty_notes": "Assessment limited to frame 148 using the original and annotated images. Identity across other frames was not assessed. This does not establish a physical conflict or near-miss.",
+    "supporting_observations": "At frame 148, the original image shows one SUV at the location covered by the boxes for IDs 4 and 40. The annotated view shows both boxes on that SUV, supporting a duplicate-box assessment for this frame."
+  },
+  "caveats": [
+    "Manual image-space review of temporary tracking associations.",
+    "Track IDs do not represent verified unique physical vehicles.",
+    "All bounding box observations are 2D image coordinates only.",
+    "No roadway lanes, physical proximity, speeds, Time-To-Collision (TTC), or physical conflict conclusion."
+  ]
+}

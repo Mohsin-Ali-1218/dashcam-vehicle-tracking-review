@@ -1,0 +1,38 @@
+{
+  "schema_version": "candidate_review_v1",
+  "review_timestamp": "2026-10-31T18:14:27.324Z",
+  "input_paths": {
+    "video": "data/preview/daylight-2018-07-29-segment-7.mp4",
+    "tracks": "data/preview/daylight-tracking-1200-v1/tracks.jsonl",
+    "pairs": "data/preview/daylight-tracking-1200-v1/pair-observations.csv"
+  },
+  "selected_interval": {
+    "start_frame": 370,
+    "end_frame": 380
+  },
+  "selected_ids": [
+    44,
+    57
+  ],
+  "pair_ids": {
+    "track_id_a": 44,
+    "track_id_b": 57
+  },
+  "reviewed_range": {
+    "start_frame": 375,
+    "end_frame": 375
+  },
+  "assessment": "uncertain",
+  "uncertainty_notes": "Assessment limited to frame 375. Two vehicles are visible, but I cannot confidently assign IDs 44 and 57 to separate vehicles or confirm duplicate boxes. Occlusion and overlapping labels limit interpretation. No physical conflict or near-miss is established.",
+  "supporting_observations": "At frame 375, a yellow vehicle and a dark vehicle are visible in an occluded cluster. The boxes for IDs 44 and 57 overlap, and their labels obscure each other, making box-to-vehicle correspondence difficult to determine",
+  "notes": {
+    "uncertainty_notes": "Assessment limited to frame 375. Two vehicles are visible, but I cannot confidently assign IDs 44 and 57 to separate vehicles or confirm duplicate boxes. Occlusion and overlapping labels limit interpretation. No physical conflict or near-miss is established.",
+    "supporting_observations": "At frame 375, a yellow vehicle and a dark vehicle are visible in an occluded cluster. The boxes for IDs 44 and 57 overlap, and their labels obscure each other, making box-to-vehicle correspondence difficult to determine"
+  },
+  "caveats": [
+    "Manual image-space review of temporary tracking associations.",
+    "Track IDs do not represent verified unique physical vehicles.",
+    "All bounding box observations are 2D image coordinates only.",
+    "No roadway lanes, physical proximity, speeds, Time-To-Collision (TTC), or physical conflict conclusion."
+  ]
+}

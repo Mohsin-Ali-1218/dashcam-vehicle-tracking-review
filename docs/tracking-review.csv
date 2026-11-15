@@ -1,0 +1,8 @@
+case,frames,finding,evidence,certainty
+ID 1,sampled 0–119,same sedan across reviewed samples,rendered video,sampled continuity only
+ID 6,frame 1,false vehicle detection over road/hood,rendered video and track box,confirmed visually
+ID 9 to ID 11,frames 17–19,candidate association rejected at IoU 0.25 versus threshold 0.30,code and saved boxes,physical identity uncertain
+ID 14,sampled frames 30–50,vehicle appears to enter from left,rendered video,probable entry
+ID 2,frames 460–490,sedan moves out through left image boundary after last observation at 477,rendered video and saved boxes,probable exit
+ID 4,frames 200–240,same SUV tracked through 220; partial SUV visible without detection at 221–222; outside view from 223,consecutive original-video frames and saved track records,boundary detection dropout followed by exit; no observed ID reassignment in this interval
+ID 3,frames 404–414,vehicle remains visible; no recorded detection at 407–411; same ID resumes at 412,consecutive original-video frames and saved track records,five-frame detection dropout with ID recovery; no observed fragmentation in this interval
